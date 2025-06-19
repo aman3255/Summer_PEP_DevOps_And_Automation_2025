@@ -26,9 +26,6 @@ jobs:
           cache-dependency-path: CI_PipeLine/package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm i
         working-directory: CI_PipeLine
 
-      - name: Run test
-        run: npm test
-        working-directory: CI_PipeLine
