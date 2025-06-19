@@ -23,9 +23,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-          cache-dependency-path: CI_PipeLine/package.json
+          cache-dependency-path: CI_PipeLine/package-lock.json
 
       - name: Install dependencies
         run: npm i
         working-directory: CI_PipeLine
-
